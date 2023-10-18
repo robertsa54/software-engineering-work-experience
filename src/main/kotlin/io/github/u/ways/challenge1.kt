@@ -4,13 +4,13 @@ import io.github.u.ways.domain.Request
 
 fun challenge1(request: Request) {
     if ((request.internet || request.tv) && (request.mobile || request.landline)) {
-      println("I would route to both the Telecoms and Broadband department")
+      println("Routing to Broadband & Telecom departments!")
     } else if ((request.internet || request.tv) && (request.mobile || request.landline)) {
-      println("I would route to both the Broadband and Telecoms department")
+      println("Routing to Broadband & Telecom departments!")
     } else if (request.mobile || request.landline) {
-      println("I would route to Telecoms department")
+      println("Routing to Telecom department!")
     } else if (request.internet || request.tv) {
-      println("I would route to Broadband department")
+      println("Routing to Broadband department!")
     }
 }
         """
